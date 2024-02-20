@@ -16,7 +16,7 @@ def connect_db():
 @app.route('/')
 def index():
     data = get_data()
-    return render_template('Festival.html', data = data)
+    return render_template('main.html', data = data)
 
 # Daten aus der Datenbank abrufen Hauptseite
 def get_data():
