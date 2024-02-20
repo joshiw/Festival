@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/bootstrap.css')
+}}"> 
+    <title>Newsletter</title>
+</head>
+<body>
+    <h1>Newsletter</h1>
+    <br>
+    <form method="post" action="/submit">
+        <label for="title">name:</label>
+        <input id="title" name="title" type="text">
+        <br><br>
+        <label for="content">email:</label>
+        <input id="content" name="content" type="text">
+        <br><br>
+        <button type="submit" class='btn btn-primary' id="berechnen">Submit</button>
+    </form>
+
+</body>
+</html>

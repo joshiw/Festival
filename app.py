@@ -32,7 +32,7 @@ def get_data():
 
 
 # Newsletter/Anmeldung
-@app.route('/')
+@app.route('/newsletter')
 def newsletter():
     data = get_data()
     return render_template('Newsletter.html', data = data)
@@ -57,7 +57,7 @@ def submit():
             # Datenbankverbindung schließen
             conn.close()
             print(title, content, 'wurden in der Datenbank gespeichert')
-            return redirect('/')
+            return redirect('/newsletter')
 
 
 
